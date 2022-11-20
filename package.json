@@ -1,11 +1,14 @@
 {
-  "name": "validinput",
+  "name": "validateuserinput",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test"
+
   },
   "repository": {
     "type": "git",
